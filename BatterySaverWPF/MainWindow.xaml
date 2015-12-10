@@ -1,0 +1,22 @@
+﻿<Window x:Class="BatterySaverWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Battery Saver" Height="350" Width="525" WindowStartupLocation="CenterScreen" ShowInTaskbar="False" AllowsTransparency="True" WindowStyle="None" Icon="Sources/Battery-Gurunueva.png">
+
+    <Window.Background>
+        <ImageBrush ImageSource="Sources/background.png"/>
+    </Window.Background>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="64*"/>
+            <ColumnDefinition Width="41*"/>
+            <ColumnDefinition Width="70*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="246*"/>
+            <RowDefinition Height="73*"/>
+            <RowDefinition Height="31*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Please unplug the power cord from the laptop, &#xD;&#xA;  it will save your battery and prolong its life"  Background="{x:Null}" Foreground="#FFF9F7F7" FontSize="20" FontFamily="Microsoft NeoGothic" TextOptions.TextHintingMode="Fixed" Margin="50,0" Grid.Row="1" Grid.ColumnSpan="3"/>
+    </Grid>
+</Window>
